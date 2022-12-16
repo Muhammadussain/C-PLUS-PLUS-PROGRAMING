@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int Wdelete (int LA[], int n, int pos)
+{
+for (int i=pos; i<n; i++)
+{
+LA[i]=LA[i+1];
+}
+}
+int main()
+{
+int a[]={1,2,69,3,4,5};
+int soa=sizeof(a)/sizeof(int);
+Wdelete(a,soa,2);
+for(int i=0; i<soa-1; i++)
+{
+cout<<a[i]<<",";
+}
+return 0;
+}
